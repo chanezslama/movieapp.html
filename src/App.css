@@ -1,33 +1,55 @@
-.App {
-  text-align: center;
+.App{
+    font-family: sans-serif;
+    max-width: 90%;
+    margin: auto;
+}
+.App-header{
+    display: flex;    
+    justify-content: space-around;
+    padding: 30px;   
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.movie-header-search{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 30px;
+}
+.movie-header-search-text{
+    border: solid black 2px;
+    width: 700px;
+    padding: 10px;
+}
+.movie-header-search-button{
+    border: solid black 2px;
+    background-color: transparent;
+    padding: 0 10px;
+}
+.movie-header-rating{
+    text-align: center;
+    padding: 10px;
+}
+.movie-rating-text{
+    padding: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.movie-List-item{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-left: 60px;
+  
 }
-
-.App-link {
-  color: #61dafb;
+.movie-List-item-image-item{
+    width: 300px;
+    height: 400px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie-List-item-movie{
+    margin:30px; 
+    border: black solid;
+}
+.movie-List-item-rating{
+    display: flex;
+    justify-content: center;
+    
 }
