@@ -1,5 +1,6 @@
 import React from 'react';
 import MovieCard from './movieCard'
+import WithLoadingSpinner from './withLoadingSpinner'
 
 
 
@@ -34,4 +35,4 @@ const MovieList = ({movieList , addmovie}) => (
 )
 
 
-export default MovieList;
+export default WithLoadingSpinner(MovieList);

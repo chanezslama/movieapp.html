@@ -45,7 +45,8 @@ class App extends Component {
     this.state = {
       minRationg : 1,
       movieList: movieTab,
-      titleList : ''
+      titleList : '',
+      isLoading:true
 
     }
   }
@@ -54,6 +55,14 @@ class App extends Component {
       this.setState({
         movieList: console.log(this.state.movieList.push(x))
       })
+    }
+
+    componentDidMount(){
+      setTimeout(() => {
+        this.setState({
+          isLoading:false
+        })
+      }, 5000);
     }
 
 
@@ -73,6 +82,9 @@ class App extends Component {
           }}/>
         </div>
         <MovieList 
+        
+          isLoading={this.state.isLoading}
+
           addmovie={(newMovie)=> this.addnewMovie(newMovie)}
           
           movieList={movieTab.filter(el => 
